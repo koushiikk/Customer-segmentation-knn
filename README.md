@@ -110,15 +110,18 @@ The dataset (`teleCust1000t.csv`) is a telecom customer dataset sourced from a G
 
 ## Project Structure
 
-```
+```text
 Customer-segmentation-knn/
 │
 ├── src/
-│   └── (source scripts)
+│   ├── preprocessing.py
+│   └── train_model.py
 │
-├── Untitled.ipynb          # Main Jupyter Notebook
+├── notebook.ipynb
+│  
+│
 ├── README.md
-└── .ipynb_checkpoints/
+└── .gitignore
 ```
 
 ---
