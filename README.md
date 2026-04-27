@@ -190,6 +190,7 @@ plt.xlabel('Age')
 plt.ylabel('Frequency')
 plt.show()
 ```
+![Age distribution](assets/age_distribution.png)
 **Density Plot – Annual Income**
 ```python
 df['Annual Income (k$)'].plot(kind='density', color='green')
@@ -197,6 +198,20 @@ plt.title('Density Plot – Annual Income')
 plt.xlabel('Annual Income (k$)')
 plt.show()
 ```
+![Annual income](assets/annual_income.png)
+
+**K vs Accuracy **
+```python
+plt.plot(range(1,Ks),mean_acc,'g')
+plt.fill_between(range(1,Ks),mean_acc - 1 * std_acc,mean_acc + 1 * std_acc, alpha=0.10)
+plt.fill_between(range(1,Ks),mean_acc - 3 * std_acc,mean_acc + 3 * std_acc, alpha=0.10,color="green")
+plt.legend(('Accuracy ', '+/- 1xstd','+/- 3xstd'))
+plt.ylabel('Accuracy ')
+plt.xlabel('Number of Neighbors (K)')
+```
+![K vs Accuracy](assets/k_vs_accuracy.png)
+
+   
 
 ### 5. Train-Test Split
 
