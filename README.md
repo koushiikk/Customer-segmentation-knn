@@ -180,7 +180,7 @@ plt.xlabel('Gender')
 plt.ylabel('Count')
 plt.show()
 ```
-![Gender Distribution](assets/Gender DIstribution.png)
+![Gender Distribution](assets/gender_distribution.png)
 
 **Histogram – Age Distribution**
 ```python
